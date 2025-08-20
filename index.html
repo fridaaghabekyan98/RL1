@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<div id="root"></div>
+
+<script type="text/babel">
+    const App = () => {
+        return (
+            <div className="navtop">
+                <Nav/>
+            </div>
+        );
+    };
+
+    const Nav = () => {
+        return (
+            <div className="container">
+                <Logo/>
+                <NavMenu/>
+                <StartButton/>
+            </div>
+        );
+    };
+
+    const Logo = () => {
+        return (
+            <a href="/" className="navtop-logo" data-scroll="header-main">
+                <img src="https://smartcode.am/public/image/logo.png?v=1" alt="Smart Code Logo"
+                     title="Smart Code Logo"/>
+            </a>
+        );
+    };
+
+    const NavMenu = () => {
+        return (
+            <ul className="navtop-menu">
+                <li><a href="/courses" data-scroll="courses">Դասընթացներ</a></li>
+                <li><a href="/features" data-scroll="features">Առավելություններ</a></li>
+                <li><a href="/staff" data-scroll="staff">Թրեյներներ</a></li>
+                <li><a href="/about-us" data-scroll="about">Մեր մասին</a></li>
+            </ul>
+        )
+    }
+
+    const StartButton = () => {
+        return (
+            <a href="#apply" className="but-main">Սկսե՛լ ուսումը</a>
+        )
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App/>);
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+:root {
+    --main: #f3b01b;
+    --bgsilver: #fbfbfb;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 17px;
+}
+
+.navtop {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navtop .navtop-logo img {
+    height: 36px;
+}
+
+.navtop .navtop-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+}
+
+
+.navtop .navtop-menu a {
+    padding: 34px 18px;
+    display: block;
+    position: relative;
+}
+
+.navtop .navtop-menu a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--main);
+    width: 0;
+    transition: all .4s;
+}
+
+.navtop .navtop-menu a:hover:after {
+    width: 100%;
+}
+
+.navtop .but-main {
+    padding: 12px 35px;
+}
+.but-main {
+    background-color: var(--main);
+    border: 1px solid var(--main);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 30px;
+    padding: 12px 35px;
+    color: #fff !important;
+    display: inline-block;
+    transition: all .4s;
+}
+
+.but-main:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
