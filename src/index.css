@@ -1,0 +1,13 @@
+:root {
+  --main: #f3b01b;
+  --bgsilver: #fbfbfb;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}

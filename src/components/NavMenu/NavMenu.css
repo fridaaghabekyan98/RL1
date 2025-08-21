@@ -1,0 +1,30 @@
+
+.navtop-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navtop-menu a {
+    padding: 34px 18px;
+    display: block;
+    position: relative;
+}
+
+.navtop-menu a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--main);
+    width: 0;
+    transition: all .4s;
+}
+
+.navtop-menu a:hover:after {
+    width: 100%;
+}
