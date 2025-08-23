@@ -1,0 +1,21 @@
+
+.product {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}

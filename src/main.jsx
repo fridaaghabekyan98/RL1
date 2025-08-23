@@ -1,11 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import {createRoot} from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import {navMenuData} from "./data.jsx";
+import {products} from "./db.jsx";
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App nav={navMenuData}/>
-  </StrictMode>,
+    <App products={products}/>
 )
